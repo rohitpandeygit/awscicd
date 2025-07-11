@@ -21,7 +21,7 @@ phases:
       - echo "dependencies installed"
   build:
     commands:
-      - echo "KEY value is: $KEY"
+      - echo "KEY value is $KEY"
       - ls -la 
       - docker build . -t dhruvdarji123/netflix-react-app:latest --build-arg TMDB_V3_API_KEY=$KEY
   post_build:
